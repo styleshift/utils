@@ -3,7 +3,8 @@ import * as tailwind_merge from 'tailwind-merge';
 import { clsx, ClassValue } from 'clsx';
 export { ClassValue } from 'clsx';
 export { VariantProps } from 'class-variance-authority';
-export { TV, tv } from 'tailwind-variants';
+import { TV } from 'tailwind-variants';
+export { TV } from 'tailwind-variants';
 
 /** Merges Tailwind classes without conflicts */
 declare const tw: (...classLists: tailwind_merge.ClassNameValue[]) => string;
@@ -21,8 +22,9 @@ declare const cv: <T>(base?: class_variance_authority_dist_types.ClassValue, con
 } : never) => (props?: T extends {
     [x: string]: Record<string, ClassValue>;
 } ? { [Variant in keyof T]?: class_variance_authority_dist_types.StringToBoolean<keyof T[Variant]> | null | undefined; } & class_variance_authority_dist_types.ClassProp : class_variance_authority_dist_types.ClassProp) => string;
-
+/** Creates type-safe Tailwind variants */
+declare const tv: TV;
 /** Combines and merges class names efficiently */
 declare const cn: (...inputs: ClassValue[]) => string;
 
-export { cn, cv, cx, tw };
+export { cn, cv, cx, tv, tw };
