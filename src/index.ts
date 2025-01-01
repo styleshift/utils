@@ -1,7 +1,7 @@
-import { type ClassValue, clsx } from "clsx";
-import { twMerge } from "tailwind-merge";
-import { type VariantProps, cva } from "class-variance-authority";
-import { tv, type TV } from "tailwind-variants";
+import { type ClassValue, clsx } from 'clsx';
+import { twMerge } from 'tailwind-merge';
+import { type VariantProps, cva } from 'class-variance-authority';
+import { tv, type TV } from 'tailwind-variants';
 
 /** Re-export types for consumer usage */
 export type { ClassValue, VariantProps, TV };
