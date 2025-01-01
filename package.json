@@ -2,6 +2,7 @@
   "name": "@styleshift/utils",
   "version": "0.0.1",
   "description": "Utils for StyleShift UI",
+  "prettier": "@styleshift/config",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -17,6 +18,7 @@
     "clean": "rm -rf dist node_modules/.cache coverage"
   },
   "devDependencies": {
+    "@styleshift/config": "github:styleshift/config",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "prettier": "^3.4.2",
