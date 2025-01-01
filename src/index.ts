@@ -16,7 +16,7 @@ export const cx = clsx;
 export const cv = cva;
 
 /** Creates type-safe Tailwind variants */
-export const twv = tv;
+export { tv };
 
 /** Combines and merges class names efficiently */
 export const cn = (...inputs: ClassValue[]): string => tw(cx(inputs));
