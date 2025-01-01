@@ -3,6 +3,7 @@ import * as tailwind_merge from 'tailwind-merge';
 import { clsx, ClassValue } from 'clsx';
 export { ClassValue } from 'clsx';
 export { VariantProps } from 'class-variance-authority';
+import { TV as TV$1 } from 'tailwind-variants';
 export { tv } from 'tailwind-variants';
 
 /** Merges Tailwind classes without conflicts */
@@ -24,5 +25,6 @@ declare const cv: <T>(base?: class_variance_authority_dist_types.ClassValue, con
 
 /** Combines and merges class names efficiently */
 declare const cn: (...inputs: ClassValue[]) => string;
+type TV = TV$1;
 
-export { cn, cv, cx, tw };
+export { type TV, cn, cv, cx, tw };

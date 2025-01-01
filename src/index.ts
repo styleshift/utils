@@ -1,7 +1,7 @@
 import { type ClassValue, clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 import { type VariantProps, cva } from 'class-variance-authority';
-import { tv } from 'tailwind-variants';
+import { tv, type TV as TailwindVariantsTV } from 'tailwind-variants';
 
 /** Re-export types for consumer usage */
 export type { ClassValue, VariantProps };
@@ -19,3 +19,5 @@ export const cv = cva;
 export { tv };
 /** Combines and merges class names efficiently */
 export const cn = (...inputs: ClassValue[]): string => tw(cx(inputs));
+
+export type TV = TailwindVariantsTV;
