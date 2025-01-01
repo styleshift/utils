@@ -16,6 +16,12 @@
     "format": "prettier --write .",
     "clean": "rm -rf dist node_modules/.cache coverage"
   },
+  "peerDependencies": {
+    "tailwind-variants": "^0.3.0",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.6.0",
+    "class-variance-authority": "^0.7.1"
+  },
   "devDependencies": {
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
