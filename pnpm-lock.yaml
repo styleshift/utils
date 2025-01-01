@@ -7,9 +7,6 @@ settings:
 importers:
   .:
     devDependencies:
-      '@styleshift/config':
-        specifier: github:styleshift/config
-        version: https://codeload.github.com/styleshift/config/tar.gz/3f6bcee1b7fd06027cb8049b2e9e8a8c86a04025(prettier@3.4.2)
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
@@ -484,15 +481,6 @@ packages:
       }
     cpu: [x64]
     os: [win32]
-
-  '@styleshift/config@https://codeload.github.com/styleshift/config/tar.gz/3f6bcee1b7fd06027cb8049b2e9e8a8c86a04025':
-    resolution:
-      {
-        tarball: https://codeload.github.com/styleshift/config/tar.gz/3f6bcee1b7fd06027cb8049b2e9e8a8c86a04025,
-      }
-    version: 0.0.1
-    peerDependencies:
-      prettier: '>=3.0.0'
 
   '@types/estree@1.0.6':
     resolution:
@@ -1590,10 +1578,6 @@ snapshots:
 
   '@rollup/rollup-win32-x64-msvc@4.29.1':
     optional: true
-
-  '@styleshift/config@https://codeload.github.com/styleshift/config/tar.gz/3f6bcee1b7fd06027cb8049b2e9e8a8c86a04025(prettier@3.4.2)':
-    dependencies:
-      prettier: 3.4.2
 
   '@types/estree@1.0.6': {}
 

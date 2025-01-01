@@ -9,8 +9,6 @@ export default defineConfig({
   clean: true,
   treeshake: true,
   external: [
-    'react',
-    'react-dom',
     'tailwind-variants',
     'clsx',
     'tailwind-merge',
