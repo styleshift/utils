@@ -9,12 +9,9 @@ export default defineConfig({
   clean: true,
   treeshake: true,
   external: [
-    'react',
-    'react-dom',
-    '@radix-ui/react-accordion',
     'tailwind-variants',
     'clsx',
-    'lucide-react',
     'tailwind-merge',
+    'class-variance-authority',
   ],
 });
